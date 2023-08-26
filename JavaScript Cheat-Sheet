@@ -1,0 +1,103 @@
+// Variables and Data Types
+var variableName = value; // Global scope (avoid using 'var' nowadays)
+let variableName = value; // Block-scoped variable
+const constantName = value; // Block-scoped constant
+
+// Data Types
+// - Primitive: number, string, boolean, null, undefined, symbol
+// - Object: objects, arrays, functions, classes, etc.
+
+// Operators
+// Arithmetic: +, -, *, /, %, **
+// Comparison: ==, ===, !=, !==, >, <, >=, <=
+// Logical: &&, ||, !
+
+// Conditional Statements
+if (condition) {
+  // code to execute if condition is true
+} else if (anotherCondition) {
+  // code to execute if anotherCondition is true
+} else {
+  // code to execute if no conditions are true
+}
+
+// Loops
+for (let i = 0; i < length; i++) {
+  // code to repeat for each iteration
+}
+
+while (condition) {
+  // code to repeat as long as condition is true
+}
+
+// Functions
+function functionName(parameters) {
+  // code to execute
+  return returnValue; // optional
+}
+
+// Arrays
+const arrayName = [element1, element2, element3];
+arrayName.push(newElement); // Add element to the end
+arrayName.pop(); // Remove element from the end
+arrayName.shift(); // Remove element from the beginning
+arrayName.unshift(newElement); // Add element to the beginning
+
+// Objects
+const objectName = {
+  key1: value1,
+  key2: value2,
+  method() {
+    // code
+  }
+};
+objectName.key3 = value3; // Add or update key-value pair
+delete objectName.key2; // Delete key-value pair
+
+// ES6 Features
+// Arrow Functions
+const add = (a, b) => a + b;
+
+// Template Literals
+const name = "John";
+const message = `Hello, ${name}!`;
+
+// Destructuring
+const { property1, property2 } = objectName;
+const [item1, item2] = arrayName;
+
+// Classes (ES6)
+class ClassName {
+  constructor(property) {
+    this.property = property;
+  }
+
+  method() {
+    // code
+  }
+}
+
+// Promises (Async/Await is another option)
+const promise = new Promise((resolve, reject) => {
+  if (success) {
+    resolve(data);
+  } else {
+    reject(error);
+  }
+});
+
+promise.then(data => {
+  // handle success
+}).catch(error => {
+  // handle error
+});
+
+// Fetch API (for making HTTP requests)
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    // use fetched data
+  })
+  .catch(error => {
+    // handle error
+  });
